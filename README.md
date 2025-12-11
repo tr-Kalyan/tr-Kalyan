@@ -1,11 +1,51 @@
-- 👋 Hi, I’m @tr-Kalyan
-- 👀 I’m interested in the future of the internet: Web3, alongside full-stack and frontend development.
-- 🌱 I’m currently learning Master of Science in Computer Science
-- 💞️ I’m looking to collaborate on impactful Web3 ventures, MERN stack applications, and cutting-edge frontends.
-- 🚀 Building DecentraTask, a Web3 project aiming to redefine decentralized work.
-- 📫 How to reach me kalyansde1@gmail.com | https://www.linkedin.com/in/kalyan-tr/
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: ...
+# Hi, I'm Kalyan TR 👋
+
+**Web3 Security Engineer & QA Specialist**  
+Transitioning from regulated-domain QA (Finance & Healthcare) to blockchain security and protocol development.
+
+![Web3](https://img.shields.io/badge/Focus-Web3%20Security-blue?style=flat-square&logo=blockchain)
+![Solidity](https://img.shields.io/badge/Solidity-0.8.x-363636?style=flat-square&logo=solidity)
+![Foundry](https://img.shields.io/badge/Tools-Foundry%20%7C%20Slither%20%7C%20Chainlink-00D1B2?style=flat-square)
+![Audit](https://img.shields.io/badge/Active-CodeHawks%20%26%20Code4rena-FF2D20?style=flat-square)
+
+### 🔍 Current Focus: Web3 Security & Auditing
+
+- Deep diving into **smart contract security** — static analysis, fuzzing, formal verification
+- Building and auditing **production-grade DeFi protocols** with Chainlink VRF/Automation
+- Specializing in **gas optimization**, **reentrancy protection**, and **mathematical fairness**
+- Active participant in **CodeHawks** and **Code4rena** competitive audits
+
+### 🚀 Featured Project
+
+**Autonomous Weighted Lottery** — A fully on-chain, verifiably fair lottery powered by Chainlink VRF v2.5  
+- Factory-owned subscription pattern (no manual transfers)  
+- Cumulative sum for O(1) weighted entry  
+- Self-audited with Slither (false positives documented)  
+- Live on Sepolia with end-to-end automation  
+
+🔗 [Repository](https://github.com/tr-Kalyan/VRF-Lotto) | [Live Factory](https://sepolia.etherscan.io/address/0xBeF17915bBB6fa6956045C7977C17f7fFB86FA49)
+
+### 🎓 Education
+
+- **Master of Science in Computer Science** (in progress)
+- Background in **regulated-domain QA** (Finance & Healthcare) — deep experience in compliance, testing, and risk assessment
+
+### 💼 Looking to Collaborate On
+
+- Web3 security audits and protocol reviews
+- Chainlink-integrated DeFi projects
+- Full-stack dApps (MERN + Web3 frontend)
+- Open-source security tools and frameworks
+
+### 📫 Let's Connect
+
+- Email: [kalyansde1@gmail.com](mailto:kalyansde1@gmail.com)
+- LinkedIn: [linkedin.com/in/kalyan-tr](https://www.linkedin.com/in/kalyan-tr/)
+- GitHub: [@tr-Kalyan](https://github.com/tr-Kalyan)
+
+> *"Security isn't a feature — it's the foundation."*
+
+---
 
 
 <!---
