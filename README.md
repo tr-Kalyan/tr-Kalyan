@@ -17,6 +17,14 @@ Transitioning from regulated-domain QA (Finance & Healthcare) to blockchain secu
 
 ### 🚀 Featured Project
 
+**Overcollateralized Stablecoin (DSC Protocol)** — Minimal DeFi money protocol on Sepolia  
+• Exogenous collateral (WETH/WBTC) • 200% ratio • Liquidation with 10% bonus  
+• Bounded invariant handler with burnDsc + liquidate for realistic economic testing  
+• Thousands of fuzz runs — core overcollateralization invariant holds  
+• Full CI: fmt, build, unit + invariants  
+🔗 [Code](https://github.com/tr-Kalyan/defi_stablecoin)  
+📄 [DSC](https://sepolia.etherscan.io/address/0x9072A4E5eF24bFAcc8e9F25CDc0565d82121e4fF) | [Engine](https://sepolia.etherscan.io/address/0x5A5471756a1C796d6a29d148EA88127E08922Ce6)
+
 **Autonomous Weighted Lottery** — A fully on-chain, verifiably fair lottery powered by Chainlink VRF v2.5  
 - Factory-owned subscription pattern (no manual transfers)  
 - Cumulative sum for O(1) weighted entry  
