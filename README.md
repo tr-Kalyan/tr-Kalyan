@@ -1,62 +1,51 @@
 # Hi, I'm Kalyan TR 👋
+**Web3 Security Researcher & QA Specialist**  
+Former regulated-domain QA (Finance & Healthcare) → pivoting hard into blockchain security.  
+I build DeFi protocols, then **assault them** with invariants, fuzzing, and self-audits to prove they hold under real-world pressure.
 
-**Web3 Security Engineer & QA Specialist**  
-Transitioning from regulated-domain QA (Finance & Healthcare) to blockchain security and protocol development.
+![Focus](https://img.shields.io/badge/Focus-Smart%20Contract%20Security-blue?style=flat-square&logo=blockchain)
+![Tools](https://img.shields.io/badge/Tools-Foundry%20%7C%20Slither%20%7C%20Invariants%20%7C%20Fuzzing-00D1B2?style=flat-square)
+![Active](https://img.shields.io/badge/Active-CodeHawks%20%7C%20Code4rena%20%7C%20Sherlock-FF2D20?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Open%20to%20audits%20&%20collabs-orange?style=flat-square)
 
-![Web3](https://img.shields.io/badge/Focus-Web3%20Security-blue?style=flat-square&logo=blockchain)
-![Solidity](https://img.shields.io/badge/Solidity-0.8.x-363636?style=flat-square&logo=solidity)
-![Foundry](https://img.shields.io/badge/Tools-Foundry%20%7C%20Slither%20%7C%20Chainlink-00D1B2?style=flat-square)
-![Audit](https://img.shields.io/badge/Active-CodeHawks%20%26%20Code4rena-FF2D20?style=flat-square)
+### 🔍 Current Focus
+- Competitive audits (CodeHawks First Flights: 5 validated findings, ongoing in Sherlock Aave V4 & Code4rena Panoptic)
+- Building institutional-grade DeFi models (async RWAs, Chainlink-integrated protocols)
+- Self-auditing everything — invariants, fuzz campaigns, severity-ranked reports
 
-### 🔍 Current Focus: Web3 Security & Auditing
+### 🚀 Featured Projects (Security-First)
 
-- Deep diving into **smart contract security** — static analysis, fuzzing, formal verification
-- Building and auditing **production-grade DeFi protocols** with Chainlink VRF/Automation
-- Specializing in **gas optimization**, **reentrancy protection**, and **mathematical fairness**
-- Active participant in **CodeHawks** and **Code4rena** competitive audits
+**Async Settlement RWA Vault** — ERC-4626 with real T+1/T+2 settlement delays for tokenized Treasuries/private credit  
+• Instant deposits, **async redemptions** (request → delay → claim) to mirror TradFi reality  
+• Stable NAV accounting (virtual liabilities prevent price spikes on queued redemptions)  
+• Built-in protections: slippage guard, cancel/rescind (compliance/sanctions), dry-vault errors  
+• Full assault: 1000+ invariant fuzz runs, self-audit report (5 findings fixed), fork tests with real USDC  
+• Live & verified on Sepolia: [0x9dC96F7D...](https://sepolia.etherscan.io/address/0x9dC96F7D1161F2E40b1D855C57c5FD2a46cFf6b5)  
+🔗 [Repo](https://github.com/tr-Kalyan/async-rwa-vault) | [X Thread](https://x.com/kalyan__tr/status/...)  
 
-### 🚀 Featured Project
+**Autonomous Weighted Lottery** — Factory-owned Chainlink VRF v2.5 subscription, O(1) weighted randomness, full automation  
+• Cumulative sum pattern + timeout recovery  
+• Self-audited with Slither (false positives documented)  
+• 21+ unit tests + CI/CD pipeline  
+🔗 [Repo](https://github.com/tr-Kalyan/VRF-Lotto) | Live Factory on Sepolia
 
-**Overcollateralized Stablecoin (DSC Protocol)** — Minimal DeFi money protocol on Sepolia  
-• Exogenous collateral (WETH/WBTC) • 200% ratio • Liquidation with 10% bonus  
-• Bounded invariant handler with burnDsc + liquidate for realistic economic testing  
-• Thousands of fuzz runs — core overcollateralization invariant holds  
-• Full CI: fmt, build, unit + invariants  
-🔗 [Code](https://github.com/tr-Kalyan/defi_stablecoin)  
-📄 [DSC](https://sepolia.etherscan.io/address/0x9072A4E5eF24bFAcc8e9F25CDc0565d82121e4fF) | [Engine](https://sepolia.etherscan.io/address/0x5A5471756a1C796d6a29d148EA88127E08922Ce6)
+**Overcollateralized Stablecoin (DSC)** — Exogenous collateral (WETH/WBTC), 200% ratio, 10% liquidation bonus  
+• Handler-based fuzzing + core solvency invariant  
+• Learning vehicle for DeFi mechanics  
+🔗 [Repo](https://github.com/tr-Kalyan/defi_stablecoin)
 
-**Autonomous Weighted Lottery** — A fully on-chain, verifiably fair lottery powered by Chainlink VRF v2.5  
-- Factory-owned subscription pattern (no manual transfers)  
-- Cumulative sum for O(1) weighted entry  
-- Self-audited with Slither (false positives documented)  
-- Live on Sepolia with end-to-end automation  
+### 🎓 Background & Education
+- **Master of Science in Computer Science** (in progress)  
+- Former regulated QA (Finance + Healthcare) — deep experience in compliance, risk, and rigorous testing
 
-🔗 [Repository](https://github.com/tr-Kalyan/VRF-Lotto) | [Live Factory](https://sepolia.etherscan.io/address/0xBeF17915bBB6fa6956045C7977C17f7fFB86FA49)
+### 💼 Open to Collaboration
+- Smart contract audits & protocol reviews  
+- Chainlink-integrated DeFi/RWA projects  
+- Security tool development & fuzzing campaigns  
 
-### 🎓 Education
-
-- **Master of Science in Computer Science** (in progress)
-- Background in **regulated-domain QA** (Finance & Healthcare) — deep experience in compliance, testing, and risk assessment
-
-### 💼 Looking to Collaborate On
-
-- Web3 security audits and protocol reviews
-- Chainlink-integrated DeFi projects
-- Full-stack dApps (MERN + Web3 frontend)
-- Open-source security tools and frameworks
-
-### 📫 Let's Connect
-
-- Email: [kalyansde1@gmail.com](mailto:kalyansde1@gmail.com)
-- LinkedIn: [linkedin.com/in/kalyan-tr](https://www.linkedin.com/in/kalyan-tr/)
+### 📫 Connect
+- Email: [kalyansde1@gmail.com](mailto:kalyansde1@gmail.com)  
+- X: [@kalyan__tr](https://x.com/kalyan__tr)  
 - GitHub: [@tr-Kalyan](https://github.com/tr-Kalyan)
 
-> *"Security isn't a feature — it's the foundation."*
-
----
-
-
-<!---
-tr-Kalyan/tr-Kalyan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+> *"Security isn't a feature — it's the foundation. I build, break, prove, and repeat."*
