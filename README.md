@@ -13,9 +13,12 @@ I build protocols with security-first thinking, then test them with fuzzing and 
 ---
 
 ### 🔍 Current Focus
-- **Bug Hunting:** Participating in Fluid DEX V2 audit contest (Sherlock) — hunting for my first vulnerability in live production code
-- **Competitive Audits:** Active on CodeHawks First Flights (5 validated findings in educational contests)
-- **Building:** Completed trust-minimized payment infrastructure on Arc Network with Circle USDC integration
+- **Bug Bounties:** Actively hunting on Immunefi and HackenProof — 
+  submitted a critical finding with $21M potential impact (pending review)
+- **Competitive Audits:** Participating in audit contests on Sherlock 
+  and CodeHawks — submitted findings in Fluid DEX V2 (pending validation)
+- **Building:** Developing an onchain DAO governance simulator to research 
+  attack vectors like flash-loan vote manipulation and quorum attacks
 
 ---
 
@@ -60,17 +63,18 @@ I build protocols with security-first thinking, then test them with fuzzing and 
 ### 🛡️ Security Research
 
 **Current Status**
-- Participating in Fluid DEX V2 audit contest (Sherlock) — first live protocol audit
+- Submitted HIGH and MEDIUM severity findings in Fluid DEX V2 
+  audit contest on Sherlock (pending validation)
+- Submitted a critical vulnerability finding with $21M potential 
+  impact on a major protocol via bug bounty (pending review)
 - 5 validated findings in CodeHawks First Flights (educational contests)
-- Learning production audit methodology through competitive platforms
+- Actively participating in bug bounty programs on Immunefi and HackenProof
 
 **Testing Approach**
 - Slither static analysis for common vulnerability classes
 - Foundry stateless fuzz testing for edge cases and invariant violations
 - Manual code review for logic errors and economic exploits
 - Fork testing against mainnet state when applicable
-
-> **Note:** I’m early in my security research journey. The above reflects my actual experience level — educational contest findings, not production discoveries yet. Actively leveling up through real audit contests like Fluid DEX V2.
 
 ---
 
@@ -131,7 +135,7 @@ Chainlink (VRF, Price Feeds), Circle USDC, Arc Network, OpenZeppelin
 ### 🎯 2026 Goals
 - [ ] Find first valid bug in a production protocol audit
 - [ ] Complete 10+ audit contests on Sherlock / CodeHawks
-- [ ] Build an automated testing tool for common DeFi vulnerabilities
+- [ ] Deep dive into large production codebases (Aave, Uniswap, Compound, Lido)
 - [ ] Contribute to at least 3 protocol security improvements
 - [ ] Transition into a junior smart contract auditor role
 
