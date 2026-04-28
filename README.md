@@ -1,144 +1,81 @@
-# Hi, I'm Kalyan TR 👋
-**Smart Contract Developer | Security-Focused Engineer**
+# Kalyan TR
 
-Former regulated-domain QA (Finance & Healthcare) → Web3 Security.
-
-I build protocols with security-first thinking, then test them with fuzzing and static analysis to find what breaks.
+Smart contract security researcher. Active on Sherlock, Code4rena, 
+and Guardian Audits. Background in regulated-domain QA (Finance, 
+Healthcare) before transitioning to Web3 security.
 
 ![Focus](https://img.shields.io/badge/Focus-Smart%20Contract%20Security-blue?style=flat-square&logo=blockchain)
 ![Tools](https://img.shields.io/badge/Tools-Foundry%20%7C%20Slither%20%7C%20Fuzzing-00D1B2?style=flat-square)
-![Active](https://img.shields.io/badge/Active-CodeHawks%20%7C%20Sherlock-FF2D20?style=flat-square)
+![Active](https://img.shields.io/badge/Active-Code4rena%20%7C%20Sherlock-FF2D20?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Open%20to%20audits%20&%20collabs-orange?style=flat-square)
 
 ---
 
-### 🔍 Current Focus
-- **Bug Bounties:** Actively hunting on Immunefi and HackenProof — 
-  submitted a critical finding with $21M potential impact (pending review)
-- **Competitive Audits:** Participating in audit contests on Sherlock 
-  and CodeHawks — submitted findings in Fluid DEX V2 (pending validation)
-- **Building:** Developing an onchain DAO governance simulator to research 
-  attack vectors like flash-loan vote manipulation and quorum attacks
+## Validated Findings
+
+### Sherlock — Fluid DEX V2
+- **MEDIUM:** MEV-extractable liquidation penalty weighting 
+  (confirmed as part of #1114 duplicate family)
+
+### Guardian Audits — LimitBreak AMM Guardian Defender
+- **MEDIUM:** WETH-DEBT missing ETH fallback in 
+  `_distributeOrCollectLiquidityToken` (validated, payout pending)
+
+### Code4rena — Jupiter Lend
+- **LOW:** Finding downgraded from Medium during judging
+- **LOW:** Additional finding (C grade)
+
+### CodeHawks First Flights
+- 5 validated findings across educational contests
 
 ---
 
-### 🚀 Featured Projects
+## Active Engagements
 
-#### Policy-Governed Agent Payments (PGAP)
-*Trust-minimized payment infrastructure for autonomous AI agents.*
-- **Architecture:** Three-layer trust model separating AI reasoning from on-chain enforcement
-- **Integration:** Google Gemini AI + Arc Network + Circle USDC
-- **Security:** Per-transaction limits, daily caps, cooldowns, allowlists, nonce-based replay protection
-- **Testing:** Stateless fuzz testing of policy invariants (caps, cooldowns, replay safety)
-- **Threat Model:** AI treated as an untrusted proposer; worst-case loss bounded by on-chain policy
-- **Live:** [Treasury on Arc Sepolia](https://testnet.arcscan.app/address/0x9fB95CE21352d7FAB5A8A79aEB1E30B76F11B034)
-- 🔗 **[View Repository](https://github.com/tr-Kalyan/policy-governed-agent-payments)**
-
-#### Async Settlement RWA Vault
-*ERC-4626 vault with T+1/T+2 settlement delays for real-world asset tokenization.*
-- **Core Feature:** Async redemptions (request → delay → claim) aligned with traditional finance settlement
-- **Security:** Stateless fuzz testing (1000+ runs), Slither static analysis, self-audit (5 issues found and fixed)
-- **Testing:** Fork tests with real USDC on Sepolia
-- **Live:** [Verified on Sepolia](https://sepolia.etherscan.io/address/0x9dC96F7D1161F2E40b1D855C57c5FD2a46cFf6b5)
-- 🔗 **[View Repository](https://github.com/tr-Kalyan/async-rwa-vault)**
-
-#### Verifiable RNG Distribution Protocol (Lottery V2)
-*Gas-optimized lottery using Chainlink VRF v2.5 with binary search winner selection.*
-- **Optimization:** O(log N) binary search replacing O(N) loops (~95% gas reduction)
-- **Architecture:** Factory pattern for permissionless deployment
-- **Security:** Checks-Effects-Interactions pattern, Slither clean, 100% test coverage
-- **Live:** [Verified Factory on Sepolia](https://sepolia.etherscan.io/address/0xEaF7a29423A1C011643cE37091F2801b78cF573f)
-- 🔗 **[View Repository](https://github.com/tr-Kalyan/VRF-Lotto)**
-
-#### Collateralized Debt Solvency Engine (DSCEngine)
-*Over-collateralized stablecoin system with liquidation mechanism.*
-- **Core Logic:** 200% collateralization threshold, 10% liquidation incentive
-- **Security:** Oracle circuit breaker for stale price protection
-- **Testing:** Stateless fuzz testing to verify solvency invariants
-- **Live:** [Verified on Sepolia](https://sepolia.etherscan.io/address/0x5A5471756a1C796d6a29d148EA88127E08922Ce6)
-- 🔗 **[View Repository](https://github.com/tr-Kalyan/collateralized_debt_solvency_engine)**
+- Code4rena — Monetrix (results pending)
+- Code4rena — K2 LayerZero (in progress)
 
 ---
 
-### 🛡️ Security Research
+## Methodology
 
-**Current Status**
-- Submitted HIGH and MEDIUM severity findings in Fluid DEX V2 
-  audit contest on Sherlock (pending validation)
-- Submitted a critical vulnerability finding with $21M potential 
-  impact on a major protocol via bug bounty (pending review)
-- 5 validated findings in CodeHawks First Flights (educational contests)
-- Actively participating in bug bounty programs on Immunefi and HackenProof
-
-**Testing Approach**
-- Slither static analysis for common vulnerability classes
-- Foundry stateless fuzz testing for edge cases and invariant violations
-- Manual code review for logic errors and economic exploits
-- Fork testing against mainnet state when applicable
+- Devil's filter: who benefits, what's the concrete trigger, what's 
+  the honest user harm?
+- Test-before-submit: validate findings with Foundry PoCs before submission
+- Falsification-first: kill weak hypotheses rather than padding reports
+- Multi-source cross-check: AI tools as suggestions, verify against 
+  spec and code
 
 ---
 
-### 🎓 Background & Education
-- **Master of Science in Computer Science** (in progress)
-- Former QA Engineer in regulated industries (Finance & Healthcare)
-- Transitioned from traditional software testing to smart contract security
+## Education & Programs
+
+- Blok Capital Builder Cohort #1 (March-April 2026, taught by Nick Mudge)
+- Rektoff Launchpad Solana security bootcamp (current)
+- Master of Science in Computer Science (in progress)
 
 ---
 
-### 🧰 Tech Stack
+## Stack
 
-**Languages:**  
-Solidity, TypeScript, JavaScript, HTML/CSS
-
-**Frameworks:**  
-Foundry, Hardhat, ethers.js
-
-**Testing & Security:**  
-Foundry Fuzz Testing (stateless), Slither Static Analysis, Fork Testing
-
-**Tools:**  
-Git, GitHub, VSCode, Remix
-
-**Integrations:**  
-Chainlink (VRF, Price Feeds), Circle USDC, Arc Network, OpenZeppelin
+Solidity, Foundry (forge test, invariant fuzzing), Slither, 
+fork testing against mainnet state.
 
 ---
 
-### 💼 Open to Collaboration
+## Projects
 
-**Interested in**
-- Smart contract security research and auditing (learning phase)
-- DeFi protocol development (especially RWA and agent-based systems)
-- Building security testing frameworks
-
-**Best Fit**
-- Teams needing systematic testing and security-conscious development
-- Projects integrating Circle, Arc, or Chainlink
-- Early-stage protocols where I can contribute to architecture and testing
+- **ModularGarden** — ERC-2535 Diamond + ERC-4337 Account Abstraction. 
+  Built for Blok Capital Builder Cohort.
+- **Async Settlement RWA Vault** — ERC-4626 with T+1/T+2 settlement
+- **Policy-Governed Agent Payments** — Payment infrastructure for AI 
+  agents with on-chain policy enforcement
 
 ---
 
-### 📫 Connect
+## Contact
+
 
 📧 Email: [kalyansde1@gmail.com](mailto:kalyansde1@gmail.com)  
 🐦 X (Twitter): [@kalyan__tr](https://x.com/kalyan__tr)  
 💼 GitHub: [@tr-Kalyan](https://github.com/tr-Kalyan)
-
----
-
-### 📊 GitHub Stats
-
-![Kalyan's GitHub stats](https://github-readme-stats.vercel.app/api?username=tr-Kalyan&show_icons=true&theme=radical)
-
----
-
-### 🎯 2026 Goals
-- [ ] Find first valid bug in a production protocol audit
-- [ ] Complete 10+ audit contests on Sherlock / CodeHawks
-- [ ] Deep dive into large production codebases (Aave, Uniswap, Compound, Lido)
-- [ ] Contribute to at least 3 protocol security improvements
-- [ ] Transition into a junior smart contract auditor role
-
----
-
-**Last Updated:** January 2026
