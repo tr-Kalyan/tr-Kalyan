@@ -1,81 +1,68 @@
 # Kalyan TR
 
-Smart contract security researcher. Active on Sherlock, Code4rena, 
-and Guardian Audits. Background in regulated-domain QA (Finance, 
-Healthcare) before transitioning to Web3 security.
-
-![Focus](https://img.shields.io/badge/Focus-Smart%20Contract%20Security-blue?style=flat-square&logo=blockchain)
-![Tools](https://img.shields.io/badge/Tools-Foundry%20%7C%20Slither%20%7C%20Fuzzing-00D1B2?style=flat-square)
-![Active](https://img.shields.io/badge/Active-Code4rena%20%7C%20Sherlock-FF2D20?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Open%20to%20audits%20&%20collabs-orange?style=flat-square)
+Smart contract security researcher. Background in regulated-domain QA (5+ years, JP Morgan & Franklin Templeton) before transitioning to Web3 security full-time. Competing on Code4rena, Sherlock, HackenProof, and Cantina. 
 
 ---
 
 ## Validated Findings
 
-### Sherlock — Fluid DEX V2
-- **MEDIUM:** MEV-extractable liquidation penalty weighting 
-  (confirmed as part of #1114 duplicate family)
+| Protocol | Platform | Findings | Reports |
+|---|---|---|---|
+| Fluid DEX V2 | Sherlock | 1M | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/sherlock/Fluid-dex%20V2) |
+| Hyperbridge | HackenProof | 1H | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/HyperBridge%20Protocol) |
+| Solv BTC+ | HackenProof | 1C | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/Solv%20Protocol) |
+| Limit Break AMM | GuardianAudits | 1M | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/GuardianAudits/LimitBreak) |
+| Jupiter Lend | Code4rena | 2L | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/code4rena/Jupiter%20Lend) |
+| Monetrix | Code4rena | 2L | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/code4rena/Monterix) |
 
-### Guardian Audits — LimitBreak AMM Guardian Defender
-- **MEDIUM:** WETH-DEBT missing ETH fallback in 
-  `_distributeOrCollectLiquidityToken` (validated, payout pending)
-
-### Code4rena — Jupiter Lend
-- **LOW:** Finding downgraded from Medium during judging
-- **LOW:** Additional finding (C grade)
-
-### CodeHawks First Flights
-- 5 validated findings across educational contests
+> Duplicate (Valid) — independently identified the same vulnerability as the lead reporter. The bug is confirmed; credit is shared.
 
 ---
 
-## Active Engagements
+## Open to Audits and Jobs
 
-- Code4rena — Monetrix (results pending)
-- Code4rena — K2 LayerZero (in progress)
+Available for audit collaborations, solo engagements, and junior/associate security researcher roles. If you are running a contest, building a protocol, or hiring — reach out.
+
+📧 [kalyansde1@gmail.com](mailto:kalyansde1@gmail.com) · 🐦 [@kalyan__tr](https://x.com/kalyan__tr)
 
 ---
 
 ## Methodology
 
-- Devil's filter: who benefits, what's the concrete trigger, what's 
-  the honest user harm?
-- Test-before-submit: validate findings with Foundry PoCs before submission
-- Falsification-first: kill weak hypotheses rather than padding reports
-- Multi-source cross-check: AI tools as suggestions, verify against 
-  spec and code
-
----
-
-## Education & Programs
-
-- Blok Capital Builder Cohort #1 (March-April 2026, taught by Nick Mudge)
-- Rektoff Launchpad Solana security bootcamp (current)
-- Master of Science in Computer Science (in progress)
+- **Falsification-first** — kill weak hypotheses before investing in a PoC
+- **Test-before-submit** — validate findings with Foundry or Anchor PoCs
+- **Devil's filter** — who benefits, what is the concrete trigger, what is the honest user harm
+- **Cross-check** — AI tools as a suggestion layer, verify against spec and code
+- **Fuzz and invariant testing** — use Foundry fuzz and invariant suites to find edge cases the unit tests miss and confirm protocol invariants hold under arbitrary inputs
 
 ---
 
 ## Stack
 
-Solidity, Foundry (forge test, invariant fuzzing), Slither, 
-fork testing against mainnet state.
+**Languages:** Solidity · Rust (Anchor/Solana) · Soroban/Stellar
+
+**Tooling:** Foundry (unit, fuzz, invariant) · Slither
+
+**Ecosystems:** EVM · Solana · Stellar
+
+**Cross-chain:** LayerZero · ISMP/Hyperbridge
+
+---
+
+## Education & Programs
+
+- **Rektoff Launchpad × Solana Foundation** — Rust Security Bootcamp, graduated with Grade A (216pts). Capstone: MetaLend audit, 15 findings across admin auth, oracle validation, liquidation math, and flash loan vectors.
+
+![Rektoff Graduation Certificate](./rektoff-certificate.png)
+
+- **Blok Capital Builder Cohort #1** — ERC-2535 Diamond, ERC-4337 (mentored by Nick Mudge)
+- Master of Science in Computer Science (in progress)
+
 
 ---
 
 ## Projects
 
-- **ModularGarden** — ERC-2535 Diamond + ERC-4337 Account Abstraction. 
-  Built for Blok Capital Builder Cohort.
-- **Async Settlement RWA Vault** — ERC-4626 with T+1/T+2 settlement
-- **Policy-Governed Agent Payments** — Payment infrastructure for AI 
-  agents with on-chain policy enforcement
-
----
-
-## Contact
-
-
-📧 Email: [kalyansde1@gmail.com](mailto:kalyansde1@gmail.com)  
-🐦 X (Twitter): [@kalyan__tr](https://x.com/kalyan__tr)  
-💼 GitHub: [@tr-Kalyan](https://github.com/tr-Kalyan)
+- **ModularGarden** — ERC-2535 Diamond + ERC-4337 Account Abstraction wallet framework (mentored by Nick Mudge, Blok Capital Cohort #1)
+- **Verifiable RNG Distribution Protocol** — Gas-optimized lottery system using Chainlink VRF v2.5 and binary search cumulative sum for O(log N) winner selection. Factory pattern with auto-subscription management.
+- **Async Settlement RWA Vault** — ERC-4626 vault enforcing real T+1/T+2 settlement delays for tokenized real-world assets (Treasuries, private credit). Stable NAV accounting, slippage protection, compliance rescind, and admin yield injection. Validated with unit tests, invariant fuzzing (1000 runs × 128 depth), and fork tests against mainnet Circle USDC.
