@@ -53,7 +53,7 @@ Available for audit collaborations, solo engagements, and junior/associate secur
 
 - **Rektoff Launchpad × Solana Foundation** — Rust Security Bootcamp, graduated with Grade A (216pts). Capstone: MetaLend audit, 15 findings across admin auth, oracle validation, liquidation math, and flash loan vectors.
 
-![Rektoff Graduation Certificate](./rektoff-certificate.png)
+![Rektoff Graduation Certificate](./RektOff - Kalyan Tunga Ramesh.png)
 
 - **Blok Capital Builder Cohort #1** — ERC-2535 Diamond, ERC-4337 (mentored by Nick Mudge)
 - Master of Science in Computer Science (in progress)
