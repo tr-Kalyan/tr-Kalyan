@@ -9,13 +9,15 @@ Smart contract security researcher. Background in regulated-domain QA (5+ years,
 | Protocol | Platform | Findings | Reports |
 |---|---|---|---|
 | Fluid DEX V2 | Sherlock | 1M | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/sherlock/Fluid-dex%20V2) |
-| Hyperbridge | HackenProof | 1H | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/HyperBridge%20Protocol) |
-| Solv BTC+ | HackenProof | 1C | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/Solv%20Protocol) |
+| Hyperbridge | HackenProof | 1H (Dup) | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/HyperBridge%20Protocol) |
+| Solv BTC+ | HackenProof | 1C (Dup) | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/Solv%20Protocol) |
+| 0xMarkets | HackenProof | 1H, 4M | - |
 | Limit Break AMM | GuardianAudits | 1M | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/GuardianAudits/LimitBreak) |
 | Jupiter Lend | Code4rena | 2L | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/code4rena/Jupiter%20Lend) |
 | Monetrix | Code4rena | 2L | [View →](https://github.com/tr-Kalyan/web3-security-findings/tree/main/code4rena/Monterix) |
+| K2 | Code4rena | 4L | - |
 
-> Duplicate (Valid) — independently identified the same vulnerability as the lead reporter. The bug is confirmed; credit is shared.
+> Duplicate (Valid) — independently identified the same vulnerability as the lead reporter. The bug is confirmed, credit is shared.
 
 ---
 
